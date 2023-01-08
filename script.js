@@ -9,12 +9,12 @@ function typeWriter() {
     }
 }
 
-var slideIndex = 0;
+let slideIndex = 0;
 showSlides();
 
 function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("slide");
+  let i;
+  let slides = document.getElementsByClassName("slide");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
@@ -26,7 +26,7 @@ function showSlides() {
   setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
 
-var swiper = new Swiper(".slide-content", {
+let swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
     spaceBetween: 25,
     loop: true,
