@@ -11,7 +11,7 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <!-- Nav Bar -->
+    <!-- FavIcon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Emojis -->
     <meta charset="UTF-8">
@@ -28,10 +28,22 @@
         <div class="btn">
           <i class="fas fa-times close-btn"></i>
         </div>
-        <a href="#">Home</a>
-        <a href="#AboutMe">About Me</a>
-        <a href="#Projects">Projects</a>
-        <a href="#Links">Let's Connect</a>
+        <a href="#">
+          <i class="fa fa-home"></i> 
+          Home
+        </a>
+        <a href="#AboutMe">
+          <i class="fa fa-id-card"></i> 
+          About Me
+        </a>
+        <a href="#Projects">
+          <i class="fa fa-code"></i> 
+          Projects
+        </a>
+        <a href="#Contact">
+          <i class="fa fa-chain"></i>
+          Let's Connect
+        </a>
       </div>
       <div class="btn">
         <i class="fas fa-bars menu-btn"></i>
@@ -82,37 +94,37 @@
             <span style="--i:7; font-size: 30px;">e</span>
           </h2>
           <ul class="stat_list" style="font-size: 20px;list-style: none;">
-            <li style="margin-top: 30px;">
+            <li>
               <i class="uil-chart-line"></i>
-              Age: 19
+              Age: <span>19</span>
             </li>
-            <li style="margin-top: 30px;">
-              <i class="uil uil-user-square stats__icon"></i> 
-              Pronouns: He
+            <li>
+              <i class="fa fa-mars"></i> 
+              Pronouns: <span>He/Him</span>
             </li>
-            <li style="margin-top: 30px;">
-              <i class="uil uil-graduation-cap stats__icon"></i> 
-              Degree: Computer Science 
+            <li>
+              <i class="fas fa-laptop-code"></i> 
+              Degree: <span>Computer Science</span>
             </li>
-            <li style="margin-top: 30px;">
-              <i class="uil uil-graduation-cap stats__icon"></i> 
-              Year of Study: Second Year
+            <li>
+              <i class="fas fa-graduation-cap"></i> 
+              Year of Study: <span>Second Year</span>
             </li>
-            <li style="margin-top: 30px;">
-              <i class="uil uil-plane-arrival stats__icon"></i> 
-              Background: Chinese Indonesian
+            <li>
+              <i class="fas fa-globe-asia"></i> 
+              Background: <span>Chinese Indonesian</span> 
             </li>
-            <li style="margin-top: 30px;">
-              <i class="uil uil-music stats__icon"></i> 
-              Music genre: Pop, Hip hop or Disco 
+            <li>
+              <i class="fas fa-music"></i> 
+              Music genre: <span>Pop, Hip hop or Disco</span>
             </li>
-            <li style="margin-top: 30px;">
-              <i class="uil uil-palette stats__icon"></i> 
-              Hobbies: Basketball, Gym and Wangan Midnight
+            <li>
+              <i class="fas fa-basketball-ball"></i> 
+              Hobbies: <span>Basketball, Gym and Wangan Midnight</span>
             </li>
-            <li style="margin-top: 30px;">
-              <i class="uil uil-star stats__icon"></i> 
-              Fun fact: I was once in a choir 🗣
+            <li>
+              <i class="far fa-lightbulb"></i> 
+              Fun fact: <span>I was once in a choir</span> 🗣
           </li>
         </ul>
       </div>
@@ -197,6 +209,19 @@
         <h3 style="margin-bottom: 150px; color: transparent;">space</h3>
       </div>
     </section>
+    <hr class="page__break">
+
+    <!-- Contact Page -->
+    <section class="contact section" id="Contact">
+      <div class="content">
+        <h3 style="margin-bottom: 150px; color: transparent;">space</h3>
+        <h1 style = "font-size:45px;">
+          Hit Me Up!
+        </h1>
+        <h3 style="margin-bottom: 150px; color: transparent;">space</h3>
+      </div>
+    </section>
+
 
     <!-- ADDITIONAL SCRIPT -->
     <script>
@@ -219,6 +244,5 @@
         menu.classList.remove('active');
       });
     </script>
-
   </body>
 </html>

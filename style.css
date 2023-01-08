@@ -316,6 +316,15 @@ header .btn{
 }
 
 /* About Me */
+.stat_list li{
+  margin-top: 30px; 
+  text-align: left;
+}
+
+.stat_list li span{
+  color:rgb(105, 10, 230)
+}
+
 .waviy {
   position: relative;
   -webkit-box-reflect: below -20px linear-gradient(transparent, transparent);
