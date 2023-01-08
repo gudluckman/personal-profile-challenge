@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ed's Page</title>
     <!-- Css  -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- JavaScript -->
     <script src="script.js"></script>   
     <!-- Font -->
@@ -39,6 +39,10 @@
         <a href="#Projects">
           <i class="fa fa-code"></i> 
           Projects
+        </a>
+        <a href="#Gallery">
+          <i class="fas fa-camera"></i>
+          2022 Recap
         </a>
         <a href="#Contact">
           <i class="fa fa-chain"></i>
@@ -167,7 +171,7 @@
               UVRT was y first web development project as an attempt to learn HTML5 and CSS. I was following a Youtube tutorial (Easy Tutorials) and completed the project during my HSC trial study break.
             </p>
             <div class="card-link">
-              <a href="https://uvrt.netlify.app" style="text-decoration:none; font-size: 16px;">
+              <a href="https://uvrt.netlify.app">
                 <i class="uil uil-images stats__icon"></i> 
                 Demo
               </a>
@@ -185,7 +189,7 @@
               The development of a custom personalised discord bot is in progress. As of now, it has a weather function where a certain command can be executed to obtain details about the weather in a particular location
             </p>
             <div class="card-link">
-              <a href="" style="text-decoration:none; font-size: 16px;">
+              <a href="">
                 <i class="uil uil-github stats__icon"></i>
                 GitHub
               </a>
@@ -199,7 +203,7 @@
               A data persistent web chat was developed with Javascript & TypeScript for the backend and React Js for the frontend as part of COMP1531 Major Project in 22T2. As a result of this course, I gained a better understanding of how the backend works and learned how to use APIs.
             </p>
             <div class="card-link">
-              <a href="https://github.com/gudluckman/web-chat" style="text-decoration:none; font-size: 16px;">
+              <a href="https://github.com/gudluckman/web-chat">
                 <i class="uil uil-github stats__icon"></i>
                 GitHub
               </a>
@@ -210,14 +214,103 @@
       </div>
     </section>
     <hr class="page__break">
-
-    <!-- Contact Page -->
-    <section class="contact section" id="Contact">
+    
+    <!-- Gallery Page -->
+    <section class="gallery section" id="Gallery">
       <div class="content">
         <h3 style="margin-bottom: 150px; color: transparent;">space</h3>
-        <h1 style = "font-size:45px;">
-          Hit Me Up!
+        <h1 style="font-size:45px;">
+          My 2022 Gallery
         </h1>
+
+        <div id="window">
+          <div id="slide-container">
+            <div class="slides">
+              <img class="slide" src="assets/2022_recap/tower.jpg"> 
+            </div>
+
+            <div class="slides">
+              <img class="slide" src="assets/2022_recap/canva.jpg"> 
+            </div>
+
+            <div class="slides">
+              <img class="slide" src="assets/2022_recap/google_view.jpg"> 
+            </div>
+
+            <div class="slides">
+              <img class="slide" src="assets/2022_recap/canteen.jpg"> 
+            </div>
+
+            <div class="slides">
+              <img class="slide" src="assets/2022_recap/fireworks.jpg"> 
+            </div>
+
+            <a id="previous" class="arrow">&#10094</a>
+            <a id="next" class="arrow">&#10095</a>
+            <div id="text-bar">
+              <p id="place"></p>
+            </div>
+          </div>
+          <div id="dotsContainer"></div>
+        </div>
+
+        <script>
+          var index = 0; 
+          var locations = ["Sydney Tower", "Friday's at Canva", 
+          "Google Sydney HQ view", "Google's canteen", "New Year's eve in Darling Harbour"]
+
+          var slides = document.getElementsByClassName("slides"); 
+          var nextArrow = document.getElementById("next");
+
+          var previousArrow = document.getElementById("previous");
+
+          var place = document.getElementById("place");
+
+          var dotsContainer = document.getElementById("dotsContainer");
+
+          var dotArray = document.getElementsByClassName("dots"); 
+
+          createDots(); 
+          showSlides(index); 
+
+          function createDots() {
+            for (i=0; i<slides.length; i++) {
+            var dot = document.createElement("span");
+            dot.className = "dots"; 
+            dotsContainer.appendChild(dot); 
+            }
+          }
+
+          function showSlides(x) {
+            if (x > slides.length-1) {
+              index = 0; 
+            }
+            if (x < 0) {
+              index = slides.length-1; 
+            }
+            for (i=0; i < slides.length; i++) {
+              slides[i].style.display = "none"; 
+              dotArray[i].className = "dots";  
+            }
+            
+            slides[index].style.display = "block";
+            dotArray[index].className += " activeDot"; 
+            place.innerHTML = locations[index]; 
+          }
+
+          nextArrow.onclick = function() {
+            index += 1; 
+            showSlides(index); 
+          } 
+
+          previousArrow.onclick = function() {
+            index -= 1; 
+            showSlides(index); 
+          } 
+
+          dotArray[0].onclick = showSlides(1); 
+        </script>
+
         <h3 style="margin-bottom: 150px; color: transparent;">space</h3>
       </div>
     </section>
