@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ed's Page</title>
+    <!-- Css  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JavaScript -->
+    <script src="script.js"></script>   
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- Nav Bar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Emojis -->
+    <meta charset="UTF-8">
+    <!-- Sandwich bar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  </head>
+  <body>
+    <!-- NavBar -->
+    <header>
+      <a href="#" class="logo">EL</a>
+      <div class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <a href="#">Home</a>
+        <a href="#AboutMe">About Me</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Links">Let's Connect</a>
+        <a href="#Contact">Contact</a>
+      </div>
+      <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
+    </header>  
+    
+    <!-- Custom Background -->
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <!-- Header-->
+    <div class="content" id="Home">
+      <h3 style="margin-top: 150px; color: transparent;">space</h3>
+      <h1 id="header" onmouseover="typeWriter()" style = "font-size:45px;">
+        Hey There! <span class="wave">👋🏻</span><br/>
+      </h1>
+      
+      <div class="profile">
+        <img src="assets/hero_image.png" class="myimg" style="margin-top:30px; margin-bottom:30px;">
+      </div>
+      <div>
+        <p style ="font-size:20px;margin-top:20px;margin-bottom:30px;">I am usually known as 
+          <span class="discordName" style = "font-size:20px;margin-top:20px;margin-bottom:30px;">"Yi Long Ma"</span> in Discord.</p>
+      </div>
+      <img src="assets/discordpic.png" class="discordimg">
+      <h3 style="margin-bottom: 100px; color: transparent;">space</h3>
+    </div>
+    <hr class="page__break">
+    
+    <!-- About Page -->
+    <section class="about section" id="AboutMe">
+      <div class="content">
+        <h3 style="margin-bottom: 150px; color: transparent;">space</h3>
+        <h1 style = "font-size:45px;">
+          Get To Know Me
+        </h1>
+        <h2 class="about_me">About Me</h2>
+
+        <div class="row">
+          <div class="column">
+            <img src="assets/basketball.png" class="basketballImg">
+          </div>
+          <div class="column">
+            <img src="assets/basketball2.png" class="basketball2Img">
+          </div>
+        </div>
+      </div>
+      <h3 style="margin-bottom: 150px; color: transparent;">space</h3>
+    </section>
+    <hr class="page__break">
+
+    <!-- Projects Page -->
+    <section class="about section" id="Projects">
+      <div class="content">
+        <h3 style="margin-bottom: 150px; color: transparent;">space</h3>
+        <h1 style = "font-size:45px;">
+          Projects
+        </h1>
+        <p style="font-size:20px;">
+          <br/>Here are some of the projects that I've worked on or am currently working on
+        </p>
+        
+        <div class="card-row">
+          <div class="card">
+            <img src="assets/uniweb.jpg">
+            <h3>University Website</h3>
+            <p>Project description</p>
+            <div class="card-link">
+              <a href="https://uvrt.netlify.app" style="text-decoration:none; font-size: 16px;">Demo</a>
+              <a href="https://github.com/gudluckman/uni-website" style="text-decoration:none;font-size: 16px;">Source Code</a>
+            </div>
+          </div>
+      
+          <div class="card">
+            <img src="assets/discord_bot.jpg">
+            <h3>Discord Bot</h3>
+            <p>Project description</p>
+            <div class="card-link">
+              <a href="" style="text-decoration:none; font-size: 16px;">Demo</a>
+              <a href="" style="text-decoration:none; font-size: 16px;">Source Code</a>
+            </div>
+          </div>
+      
+          <div class="card">
+            <img src="assets/unswtreats.jpg">
+            <h3>Web Chat</h3>
+            <p>Project description</p>
+            <div class="card-link">
+              <a href="" style="text-decoration:none; font-size: 16px;">Demo</a>
+              <a href="https://github.com/gudluckman/web-chat" style="text-decoration:none; font-size: 16px;">Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADDITIONAL SCRIPT -->
+    <script>
+      //Javascript for Navigation effect on scroll
+      window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle('sticky', window.scrollY > 0);
+      });
+
+      //Javascript for responsive navigation sidebar Nav
+      var menu = document.querySelector('.menu');
+      var menuBtn = document.querySelector('.menu-btn');
+      var closeBtn = document.querySelector('.close-btn');
+
+      menuBtn.addEventListener("click", () => {
+        menu.classList.add('active');
+      });
+
+      closeBtn.addEventListener("click", () => {
+        menu.classList.remove('active');
+      });
+    </script>
+
+  </body>
+</html>
