@@ -36,10 +36,16 @@ header.sticky{
 
 header .logo{
   font-size: 30px;
-  color: black;
+  color: rgb(59, 58, 58);
   font-weight: 700;
   text-decoration: none;
   letter-spacing: 2px;
+  transition: 1s;
+}
+
+header .logo:hover{
+  color: rgb(0, 0, 0);
+  font-size: 50px;
 }
 
 header .menu{
