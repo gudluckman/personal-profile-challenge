@@ -644,6 +644,7 @@ header .btn{
 .wrapper{
   display: inline-flex;
   margin-top: 60px;
+  margin-bottom: 150px;
 }
 .wrapper .icon{
   margin: 0 20px;
@@ -758,4 +759,35 @@ header .btn{
 
 .wrapper .icon:hover span{
   color: #fff;
+}
+
+/* top page scroller */
+.scroll-up i{
+  font-size: 25px;
+  transition: 0.3s;
+  color: rgb(80, 78, 78);
+}
+
+.scroll-up i:hover{
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+
+.back-top {
+  margin-bottom: 30px; 
+  font-size: 18px;
+}
+
+/* Footer section */
+.footer-content {
+  display: flex;
+}
+
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #050505;
+  padding: 30px;
 }
