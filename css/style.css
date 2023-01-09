@@ -334,7 +334,7 @@ header .btn{
 /* Wavy style */
 .waviy {
   position: relative;
-  -webkit-box-reflect: below -20px linear-gradient(transparent, transparent);
+  -webkit-box-reflect: below -70px linear-gradient(transparent, transparent);
   margin-top: 30px; 
   margin-bottom: 30px; 
   font-size: 30px;
@@ -343,7 +343,7 @@ header .btn{
   position: relative;
   display: inline-block;
   color: black;
-  animation: waviy 3s infinite;
+  animation: waviy 2s infinite;
   animation-delay: calc(.1s * var(--i));
   
 }
@@ -551,6 +551,7 @@ header .btn{
   -webkit-box-reflect: below -20px linear-gradient(transparent, transparent);
   margin-top: 50px; 
   font-size: 30px;
+  margin-bottom: 10px;
 }
 .waviy_capture span {
   position: relative;
@@ -615,13 +616,6 @@ header .btn{
     margin-top: 30px; 
     font-size: 18px;
   }
-
-  .waviy_capture {
-    position: relative;
-    -webkit-box-reflect: below -20px linear-gradient(transparent, transparent);
-    margin-top: 30px; 
-    font-size: 18px;
-  }
   .social-links .wrapper{
     display: inline;
   }
@@ -641,7 +635,7 @@ header .btn{
 /* credits:https://www.codingnepalweb.com social-media-buttons-with-tooltip-on-hover/ */
 .wrapper{
   display: inline-flex;
-  margin-top: 130px;
+  margin-top: 60px;
 }
 .wrapper .icon{
   margin: 0 20px;
