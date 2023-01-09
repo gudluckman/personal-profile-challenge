@@ -1,5 +1,7 @@
 # personal-profile-challenge
 
+View the website here: https://gudluckman.netlify.app/
+
 #### CSESoc 2023 Trainee Technical Challenge.
 
 #### In spite of the fact that this website is mobile friendly, I recommend viewing it in a larger browser window.
