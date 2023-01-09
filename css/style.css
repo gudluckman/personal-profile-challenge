@@ -329,6 +329,9 @@ header .btn{
 .waviy {
   position: relative;
   -webkit-box-reflect: below -20px linear-gradient(transparent, transparent);
+  margin-top: 30px; 
+  margin-bottom: 30px; 
+  font-size: 30px;
 }
 .waviy span {
   position: relative;
@@ -346,6 +349,7 @@ header .btn{
     transform: translateY(-5px)
   }
 }
+
 /* Projects  */
 /* Card styling */
 .card-row .card h3{
@@ -433,7 +437,7 @@ header .btn{
 }
 /* Width of carousel */
 #window, #slide-container {
-  margin-top: 30px;
+  margin-top: 10px;
   width: 400px;
   display:inline-table
 }
@@ -535,6 +539,31 @@ header .btn{
   background-color: rgba(0,0,0,0.6); 
 }
 
+/* Capture Waviy style */
+.waviy_capture {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, transparent);
+  margin-top: 50px; 
+  font-size: 30px;
+}
+.waviy_capture span {
+  position: relative;
+  display: inline-block;
+  color: black;
+  animation: waviy 3s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-5px)
+  }
+}
+
+
 /* Adjustable Screen Sizes */
 @media screen and (max-width: 1024px) {
   .content {
@@ -572,5 +601,19 @@ header .btn{
     height: 420px;
     overflow: hidden; 
     position: relative; 
+  }
+
+  .waviy{
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, transparent);
+    margin-top: 30px; 
+    font-size: 18px;
+  }
+
+  .waviy_capture {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, transparent);
+    margin-top: 30px; 
+    font-size: 18px;
   }
 }
