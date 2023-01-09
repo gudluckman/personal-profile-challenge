@@ -616,6 +616,14 @@ header .btn{
     margin-top: 30px; 
     font-size: 18px;
   }
+
+  .waviy_capture{
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, transparent);
+    margin-top: 30px; 
+    font-size: 8px;
+  }
+
   .social-links .wrapper{
     display: inline;
   }
