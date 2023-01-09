@@ -325,10 +325,10 @@ header .btn{
   color:rgb(105, 10, 230)
 }
 
+/* Wavy style */
 .waviy {
   position: relative;
   -webkit-box-reflect: below -20px linear-gradient(transparent, transparent);
-  font-size: 60px;
 }
 .waviy span {
   position: relative;
@@ -346,10 +346,8 @@ header .btn{
     transform: translateY(-5px)
   }
 }
-
 /* Projects  */
 /* Card styling */
-
 .card-row .card h3{
   margin-top: 20px;
 }
@@ -450,17 +448,27 @@ header .btn{
 .slide {
   width: 100%; 
   min-height: 200px; 
-  border-radius: 50px;
+  border-radius: 30px;
 }
 
 .slides {
-  display: block; 
+  display: block;
+
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.slides:hover {
+  -webkit-transform: scale(1.3);
+	transform: scale(1.3);
 }
 
 /* Style of arrows */
 .arrow {
   color: white; 
-  font-size: 40px; 
+  font-size: 50px; 
   position: absolute; 
   top: 50%; 
   transform: translate(0%, -50%);  
@@ -488,7 +496,7 @@ header .btn{
   background-color: var(--transparent-grey);
   width: 100%;
   position:absolute;
-  top: 85%;
+  top: 89%;
   transform: translate(0%, -100%);  
   text-align: center; 
   height: 36px;
