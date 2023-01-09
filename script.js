@@ -1,5 +1,5 @@
 let i = 0;
-const intro = "I am Edward Lukman";
+const intro = "0000 I am Edward Lukman";
 let speed = 50;
 function typeWriter() {
     if (i < intro.length) {
