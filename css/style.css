@@ -628,10 +628,17 @@ header .btn{
     display: inline;
   }
   .wrapper .icon{
-    padding-top: 30px;
+    padding-top: 50px;
   }
   .contact-subheading{
     margin-bottom: 80px;
+  }
+
+  .scroll-up i{
+    margin-top: 50px;
+    font-size: 25px;
+    transition: 0.3s;
+    color: rgb(80, 78, 78);
   }
 }
 
@@ -774,7 +781,7 @@ header .btn{
 }
 
 .back-top {
-  margin-bottom: 30px; 
+  margin-bottom: 50px; 
   font-size: 18px;
 }
 
