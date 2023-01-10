@@ -1,3 +1,4 @@
+// Typewriter Effect
 let i = 0;
 const intro = "0000 I am Edward Lukman";
 let speed = 50;
@@ -9,6 +10,7 @@ function typeWriter() {
     }
 }
 
+// Image Carousel for Gallery section
 let slideIndex = 0;
 showSlides();
 
@@ -55,3 +57,6 @@ let swiper = new Swiper(".slide-content", {
         },
     },
   });
+
+// Copyright Year in Footer
+const year = 
