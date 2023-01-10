@@ -57,6 +57,3 @@ let swiper = new Swiper(".slide-content", {
         },
     },
   });
-
-// Copyright Year in Footer
-const year = 
