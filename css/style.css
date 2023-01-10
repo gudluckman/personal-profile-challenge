@@ -240,7 +240,7 @@ header .btn{
   transition: 1s ease;
 }
 
-.basketball2Img{
+.gymImg{
   width:300px;
   height:300px;
   object-fit:cover;
@@ -251,7 +251,7 @@ header .btn{
   transition: 1s ease;
 }
 
-.basketball2Img:hover {
+.gymImg:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
