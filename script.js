@@ -10,7 +10,7 @@ function typeWriter() {
     }
 }
 
-// Image Carousel for Gallery section
+// Image Carousel for image section
 let slideIndex = 0;
 showSlides();
 

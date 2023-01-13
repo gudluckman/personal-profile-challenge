@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ed's Website</title>
+    <title>Ed's Page</title>
     <link rel="website icon" type="png" href="assets/robot.png">
     <!-- Css  -->
     <link rel="stylesheet" href="css/style.css">
@@ -285,6 +285,8 @@
         </div>
 
         <script>
+          // Image carousel dot and description
+          // Credit: https://www.w3schools.com/howto/howto_js_slideshow.asp
           let index = 0; 
           let locations = ["Sydney Tower", "Friday's at Canva", 
           "Google Sydney HQ view", "Google's canteen", "New Year's eve in Darling Harbour"]
@@ -312,12 +314,9 @@
           }
 
           function showSlides(x) {
-            if (x > slides.length-1) {
-              index = 0; 
-            }
-            if (x < 0) {
-              index = slides.length-1; 
-            }
+            if (x > slides.length - 1) index = 0; 
+            if (x < 0) index = slides.length - 1; 
+
             for (i = 0; i < slides.length; i++) {
               slides[i].style.display = "none"; 
               dotArray[i].className = "dots";  
@@ -351,9 +350,8 @@
             document.addEventListener('visibilitychange', function(e) {
               let isPageActive = !document.hidden;
 
-              if(!isPageActive){
-                blink();
-              }else {
+              if (!isPageActive) blink();
+              else {
                 document.title = title;
                 clearInterval(blinkEvent);
               }
@@ -361,11 +359,8 @@
 
             function blink() {
               blinkEvent = setInterval(function() {
-                if (document.title === msg){
-                  document.title = title;
-                } else {
-                  document.title = msg;
-                }
+                if (document.title === msg) document.title = title;
+                else document.title = msg;
               }, 150);
             }
           };
