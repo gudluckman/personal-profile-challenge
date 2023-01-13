@@ -645,12 +645,8 @@ header .btn {
   }
 
   .row {
-      display: flex;
-  }
-
-  .column {
-      flex: 33.33%;
-      padding: 12px;
+      display: inline-flex;
+      justify-content: center;
   }
   /* Projects section */
   .projects-content {
@@ -667,7 +663,7 @@ header .btn {
   }
 }
 
-/* Adjustable Screen Sizes */
+/* Adjustable Screen Sizes for Average size smartphone and Ipad*/
 @media screen and (max-width: 1024px) {
   .content {
       display: block;
