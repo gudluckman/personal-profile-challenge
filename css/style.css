@@ -74,6 +74,9 @@ header .menu a:hover {
 }
 
 header .btn {
+  position: static;
+  right: 0;
+  margin-left: 200px;
   font-size: 25px;
   cursor: pointer;
   color: black;
@@ -119,6 +122,11 @@ header .btn {
 
 /* Adjustable Screen Sizes for Small Mobile Phone (hidden menu bar)*/ 
 @media (max-width: 400px) {
+  header .btn {
+    position: static;
+    right: 0;
+    margin-left: 160px;
+  }
   header .menu {
       position: fixed;
       background: #E2D1F9;
