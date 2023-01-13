@@ -339,6 +339,36 @@
           } 
 
           dotArray[0].onclick = showSlides(1); 
+
+          // Dynamic page title change
+          // Credit: https://medium.com/@alperen.talaslioglu/changing-page-title-dynamically-when-user-changes-tab-5d372554377c
+          window.onload = function() {
+
+            let title = document.title;
+            let msg = 'Come Back!';
+            let blinkEvent = null;
+
+            document.addEventListener('visibilitychange', function(e) {
+              let isPageActive = !document.hidden;
+
+              if(!isPageActive){
+                blink();
+              }else {
+                document.title = title;
+                clearInterval(blinkEvent);
+              }
+            });
+
+            function blink() {
+              blinkEvent = setInterval(function() {
+                if (document.title === msg){
+                  document.title = title;
+                } else {
+                  document.title = msg;
+                }
+              }, 150);
+            }
+          };
         </script>
 
         <h3 style="margin-bottom: 150px; color: transparent;">space</h3>
