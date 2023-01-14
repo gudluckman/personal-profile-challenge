@@ -669,6 +669,9 @@ header .btn {
   #slide-container {
       height: 430px;
   }
+  #text-bar {
+    top: 86%;
+  }
 }
 
 /* Adjustable Screen Sizes for Average size smartphone and Ipad*/
