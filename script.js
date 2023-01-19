@@ -1,14 +1,17 @@
 // Typewriter Effect
-let i = 0;
-const intro = "0000 I am Edward Lukman";
-let speed = 50;
-function typeWriter() {
-    if (i < intro.length) {
-      document.getElementById("header").innerHTML += intro.charAt(i);
-      i++;
-      setTimeout(typeWriter, speed);
-    }
+let messageArray = ["I am Edward Lukman"];
+let textPosition = 0;
+let speed = 100;
+
+typeWriter = () => {
+  document.querySelector("#message").
+  innerHTML = messageArray[0].substring(0,textPosition);
+
+  if (textPosition++ != messageArray[0].length) {
+    setTimeout(typeWriter, speed);
+  }
 }
+window.addEventListener("load", typeWriter);
 
 // Image Carousel for image section
 let slideIndex = 0;
