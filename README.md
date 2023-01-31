@@ -1,6 +1,6 @@
 # personal-profile-challenge
 
-View the website here: https://gudluckman.github.io/personal-profile-challenge/ or https://gudluckman.netlify.app/
+View the website here: https://gudluckman.github.io/personal-profile-challenge/
 
 #### CSESoc 2023 Trainee Technical Challenge.
 
