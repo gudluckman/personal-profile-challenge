@@ -7,7 +7,7 @@
     <!-- Css  -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- JavaScript -->
-    <script src="script.js"></script>   
+    <script src="script.js"></script>
     <!-- Font -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <!-- Swiper CSS -->
@@ -71,7 +71,7 @@
       </h1>
       
       <div class="profile">
-        <img src="assets/img/hero_image.png" class="myimg" style="margin-top:40px; margin-bottom:30px;">
+        <img src="assets/img/biz-profile.png" class="myimg" style="margin-top:40px; margin-bottom:30px;">
       </div>
       <div>
         <p style ="font-size:20px;margin-top:20px;margin-bottom:30px;">I am usually known as 
@@ -239,41 +239,47 @@
         </h1>
         <h2 class="waviy_capture">
           <span style="--i:1; font-size: 30px;">#</span>
-          <span style="--i:2; font-size: 30px;">T</span>
-          <span style="--i:3; font-size: 30px;">H</span>
-          <span style="--i:4; font-size: 30px;">R</span>
-          <span style="--i:4; font-size: 30px;">O</span>
-          <span style="--i:4; font-size: 30px;">W</span>
-          <span style="--i:4; font-size: 30px;">B</span>
-          <span style="--i:4; font-size: 30px;">A</span>
-          <span style="--i:4; font-size: 30px;">C</span>
-          <span style="--i:4; font-size: 30px;">K</span>
-          <span style="--i:6; font-size: 30px;">2</span>
-          <span style="--i:7; font-size: 30px;">0</span>
-          <span style="--i:7; font-size: 30px;">2</span>
-          <span style="--i:7; font-size: 30px;">2</span>
+          <span style="--i:2; font-size: 30px;">P</span>
+          <span style="--i:3; font-size: 30px;">o</span>
+          <span style="--i:4; font-size: 30px;">r</span>
+          <span style="--i:4; font-size: 30px;">t</span>
+          <span style="--i:4; font-size: 30px;">r</span>
+          <span style="--i:4; font-size: 30px;">a</span>
+          <span style="--i:4; font-size: 30px;">i</span>
+          <span style="--i:4; font-size: 30px;">t</span>
+          <span style="--i:4; font-size: 30px;">P</span>
+          <span style="--i:6; font-size: 30px;">h</span>
+          <span style="--i:7; font-size: 30px;">o</span>
+          <span style="--i:7; font-size: 30px;">t</span>
+          <span style="--i:7; font-size: 30px;">o</span>
+          <span style="--i:7; font-size: 30px;">g</span>
+          <span style="--i:7; font-size: 30px;">r</span>
+          <span style="--i:7; font-size: 30px;">a</span>
+          <span style="--i:7; font-size: 30px;">p</span>
+          <span style="--i:7; font-size: 30px;">h</span>
+          <span style="--i:7; font-size: 30px;">y</span>
         </h2>
 
         <div id="window">
           <div id="slide-container">
             <div class="slides">
-              <img class="slide" src="assets/2022_recap/tower.jpg"> 
+              <img class="slide" src="assets/portrait/DevRT.jpg">
             </div>
 
             <div class="slides">
-              <img class="slide" src="assets/2022_recap/canva.jpg"> 
+              <img class="slide" src="assets/portrait/canva.jpg">
             </div>
 
             <div class="slides">
-              <img class="slide" src="assets/2022_recap/google_view.jpg"> 
+              <img class="slide" src="assets/portrait/google_view.jpg">
             </div>
 
             <div class="slides">
-              <img class="slide" src="assets/2022_recap/canteen.jpg"> 
+              <img class="slide" src="assets/portrait/jewel.jpg">
             </div>
 
             <div class="slides">
-              <img class="slide" src="assets/2022_recap/fireworks.jpg"> 
+              <img class="slide" src="assets/portrait/tower.jpg">
             </div>
 
             <a id="previous" class="arrow">&#10094</a>
@@ -288,11 +294,11 @@
         <script>
           // Image carousel dot and description
           // Credit: https://www.w3schools.com/howto/howto_js_slideshow.asp
-          let index = 0; 
-          let locations = ["Sydney Tower", "Friday's at Canva", 
-          "Google Sydney HQ view", "Google's canteen", "New Year's eve in Darling Harbour"]
+          let index = 0;
+          let locations = ["'23 CSESoc Dev's Road Trip", "Friday's at Canva",
+          "Google Sydney HQ view", "Gem-tastic time", "Sydney Tower"]
 
-          let slides = document.getElementsByClassName("slides"); 
+          let slides = document.getElementsByClassName("slides");
           let nextArrow = document.getElementById("next");
 
           let previousArrow = document.getElementById("previous");
@@ -301,44 +307,43 @@
 
           let dotsContainer = document.getElementById("dotsContainer");
 
-          let dotArray = document.getElementsByClassName("dots"); 
+          let dotArray = document.getElementsByClassName("dots");
 
-          createDots(); 
-          showSlides(index); 
+          createDots();
+          showSlides(index);
 
           function createDots() {
             for (i = 0; i < slides.length; i++) {
             let dot = document.createElement("span");
-            dot.className = "dots"; 
-            dotsContainer.appendChild(dot); 
+            dot.className = "dots";
+            dotsContainer.appendChild(dot);
             }
           }
 
           function showSlides(x) {
-            if (x > slides.length - 1) index = 0; 
-            if (x < 0) index = slides.length - 1; 
+            if (x > slides.length - 1) index = 0;
+            if (x < 0) index = slides.length - 1;
 
             for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none"; 
-              dotArray[i].className = "dots";  
+              slides[i].style.display = "none";
+              dotArray[i].className = "dots";
             }
-            
             slides[index].style.display = "block";
-            dotArray[index].className += " activeDot"; 
-            place.innerHTML = locations[index]; 
+            dotArray[index].className += " activeDot";
+            place.innerHTML = locations[index];
           }
 
           nextArrow.onclick = function() {
-            index++; 
-            showSlides(index); 
-          } 
+            index++;
+            showSlides(index);
+          }
 
           previousArrow.onclick = function() {
-            index--; 
-            showSlides(index); 
-          } 
+            index--;
+            showSlides(index);
+          }
 
-          dotArray[0].onclick = showSlides(1); 
+          dotArray[0].onclick = showSlides(1);
 
           // Dynamic page title change
           // Credit: https://medium.com/@alperen.talaslioglu/changing-page-title-dynamically-when-user-changes-tab-5d372554377c
