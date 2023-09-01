@@ -120,7 +120,7 @@ header .btn {
   }
 }
 
-/* Adjustable Screen Sizes for Small Mobile Phone (hidden menu bar)*/ 
+/* Adjustable Screen Sizes for Small Mobile Phone (hidden menu bar)*/
 @media (max-width: 400px) {
   header .btn {
     position: static;
@@ -426,7 +426,7 @@ header .btn {
   }
 }
 
-/* Projects  */ /* Projects  */
+/* Projects  */
 .card-row .card h3 {
   margin-top: 20px;
 }
@@ -680,7 +680,7 @@ header .btn {
 }
 
 /* Adjustable Screen Sizes for Average size smartphone and Ipad*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 740px) {
   .content {
       display: block;
       width: auto;
@@ -715,7 +715,7 @@ header .btn {
   }
 /* Project section adjustment */
   .card-row {
-      display: inline-block;
+      display: inline;
   }
 
   .card {
@@ -781,6 +781,20 @@ header .btn {
   }
 }
 
+@media screen and (max-width: 1096px) {
+ /* Project section adjustment */
+ .card-row {
+    display: inline;
+  }
+
+  .card {
+    width: fit-content;
+  }
+
+  .card:hover {
+    width: fit-content;
+  }
+}
 /* Links Page */
 .contact-subheading {
   font-size: 45px;
